@@ -16,7 +16,7 @@ after_success:
 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
-  -docker push tarangs20/multi-client
-  -docker push tarangs20/multi-nginx
-  -docker push tarangs20/multi-server
-  -docker push tarangs20/multi-worker
+  - docker push tarangs20/multi-client
+  - docker push tarangs20/multi-nginx
+  - docker push tarangs20/multi-server
+  - docker push tarangs20/multi-worker
